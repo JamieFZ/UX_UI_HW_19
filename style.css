@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* This is My Skills Section*/
+.flexContainer{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;  
+}
+.flexContainer div{
+    width: 33%;
+    margin: 0px;
+    padding: 10px;
+}
+.flexContainer img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.mySkills{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mySkills h1{
+    padding: 20px;
+}
+.mySkills h3{
+    margin: 10px 0 10px 0;
+}
+/* This is My Work Section*/
+.workGrid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.myWork{
+    display: flex;
+    flex-direction: column;
+}
+.workGrid img{
+    max-width: 100%;
+    max-height: 100%;
+    /*object-fit: cover;*/
+}
+.content{
+    margin:10px 20px 0 20px;
+
+}
+p{
+    font-size: 16px;
+}
+.myWork h3{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-decoration-line: underline;
+}
+.myWork h1{
+    align-self: center;
+    padding: 30px;
+}
+button{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+}
+h4{
+    margin-bottom: 12px;
+}
+.content p{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .flexContainer div{
+        width: 80%;
+        margin: 0px auto;
+        padding: 10px;
+        
+    }
+    .workGrid{
+        width: 90%;
+        margin: 0 5%;
+        display: grid;
+        /*gap: 0px;*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /*grid-template-areas: 
+            "Tippo"
+            "NutritionU"
+            "Abbey"
+            ;*/
+    }
+    .tippotext{
+        order: 2;
+    }
+    .tippoimg{
+        order: 1;
+    }
+    .NUtext{
+        order: 4;
+    }
+    .NUimg{
+        order: 3;
+    }
+    .abbeytext{
+        order: 6;
+    }
+    .abbeyimg{
+        order: 5;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 60%;
+        margin-left:auto;
+        margin-right: 0; /*must use with defined width*/
+    }
+
+}
