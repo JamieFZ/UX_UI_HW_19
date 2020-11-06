@@ -2,12 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 /* This is My Skills Section*/
 .flexContainer{
     display: flex;
     flex-direction: row; 
     justify-content: center;  
+    margin-bottom: 30px;
 }
 .flexContainer div{
     width: 33%;
@@ -23,9 +25,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgb(238, 126, 175) 0%, rgb(88, 155, 231) 100%);
+
 }
 .mySkills h1{
-    padding: 20px;
+    padding: 35px;
 }
 .mySkills h3{
     margin: 10px 0 10px 0;
@@ -42,6 +47,7 @@
 .myWork{
     display: flex;
     flex-direction: column;
+    
 }
 .workGrid img{
     max-width: 100%;
