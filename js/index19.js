@@ -34,6 +34,6 @@ $(document).ready(function () {
         });
 
     $("#ABbutton").click(function () {
-        alert("Project case study is in progress, please check out later. ")
+        window.open('https://jamiefz.github.io/UX_UI_HW_20/index20.html')
     });
 });
